@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F610EF992A83939F00508A01 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F610EF982A83939F00508A01 /* GameViewModel.swift */; };
+		F610EF9C2A84DB0800508A01 /* slotImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F610EF9B2A84DB0800508A01 /* slotImage.swift */; };
 		F6B24B472A838BAC00F06F5D /* SlotGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B24B462A838BAC00F06F5D /* SlotGameApp.swift */; };
 		F6B24B492A838BAC00F06F5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B24B482A838BAC00F06F5D /* ContentView.swift */; };
 		F6B24B4B2A838BAC00F06F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B24B4A2A838BAC00F06F5D /* Assets.xcassets */; };
 		F6B24B4E2A838BAC00F06F5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B24B4D2A838BAC00F06F5D /* Preview Assets.xcassets */; };
+		F6B24B552A838C0A00F06F5D /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B24B542A838C0A00F06F5D /* Fruit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F610EF982A83939F00508A01 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		F610EF9B2A84DB0800508A01 /* slotImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slotImage.swift; sourceTree = "<group>"; };
 		F6B24B432A838BAC00F06F5D /* SlotGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlotGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B24B462A838BAC00F06F5D /* SlotGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotGameApp.swift; sourceTree = "<group>"; };
 		F6B24B482A838BAC00F06F5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F6B24B4A2A838BAC00F06F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6B24B4D2A838BAC00F06F5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6B24B542A838C0A00F06F5D /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +38,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F610EF9A2A84DAF300508A01 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F610EF9B2A84DB0800508A01 /* slotImage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F6B24B3A2A838BAC00F06F5D = {
 			isa = PBXGroup;
 			children = (
+				F6B24B462A838BAC00F06F5D /* SlotGameApp.swift */,
 				F6B24B452A838BAC00F06F5D /* SlotGame */,
 				F6B24B442A838BAC00F06F5D /* Products */,
 			);
@@ -51,8 +66,10 @@
 		F6B24B452A838BAC00F06F5D /* SlotGame */ = {
 			isa = PBXGroup;
 			children = (
-				F6B24B462A838BAC00F06F5D /* SlotGameApp.swift */,
-				F6B24B482A838BAC00F06F5D /* ContentView.swift */,
+				F610EF9A2A84DAF300508A01 /* Components */,
+				F6B24B582A838D0400F06F5D /* Model */,
+				F6B24B572A838CF300F06F5D /* ViewModel */,
+				F6B24B562A838CF000F06F5D /* View */,
 				F6B24B4A2A838BAC00F06F5D /* Assets.xcassets */,
 				F6B24B4C2A838BAC00F06F5D /* Preview Content */,
 			);
@@ -65,6 +82,30 @@
 				F6B24B4D2A838BAC00F06F5D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6B24B562A838CF000F06F5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6B24B482A838BAC00F06F5D /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6B24B572A838CF300F06F5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F610EF982A83939F00508A01 /* GameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6B24B582A838D0400F06F5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6B24B542A838C0A00F06F5D /* Fruit.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F610EF992A83939F00508A01 /* GameViewModel.swift in Sources */,
+				F6B24B552A838C0A00F06F5D /* Fruit.swift in Sources */,
 				F6B24B492A838BAC00F06F5D /* ContentView.swift in Sources */,
+				F610EF9C2A84DB0800508A01 /* slotImage.swift in Sources */,
 				F6B24B472A838BAC00F06F5D /* SlotGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
